@@ -1,0 +1,195 @@
+.basket{
+    margin-top: 140px;
+    .container{
+        position: relative;
+        width: 80%;
+        .basket-title{
+            @media screen and (max-width:650px) {
+               margin-bottom: 10px;
+               font-size: 24px;
+            }
+        }
+        @media screen and (max-width:475px) {
+            width: 100%;
+            padding-top: 36px;
+        }
+    }
+    .titles{
+        margin: 20px 0;
+        display: flex;
+        & > h6{
+            width: 60%;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 400; 
+        }
+        h6{
+            font-size: 14px;
+            font-weight: normal;
+        }
+        span{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        @media screen and (max-width:650px) {
+            display: none;
+        }
+    }
+    ul{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li{
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width:650px) {
+               flex-direction: column;
+            }
+        }
+        .delete-icon{
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            transition: 0.3s;
+            padding: 3px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            &:hover{
+                border: 2px solid red;       
+            }
+        }
+        .list-left{
+            width: 62%;
+            display: flex;
+            align-items: center;
+            gap: 21px;
+            img{
+                width: 109px;
+                height: 134px;
+                @media screen and (max-width:1000px) {
+                    width: 133px;
+                    height: 166px;
+                }
+            }
+            span{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            p{
+                font-size: 14px;
+                @media screen and (max-width:650px) {
+                    max-width: 80%;
+                }
+            }
+            h3{
+                font-size: 16px;
+                font-weight: normal;
+            }
+            .list-quantity-mobile{
+                @media screen and (min-width:650px) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width:650px) {
+                width: 100%;
+            }
+        }
+        .list-right{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            p{
+                width: 50px;
+                text-align: center;
+                font-size: 16px;
+            }
+            @media screen and (max-width:650px) {
+                display: none;
+            }
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .deleteAnimate{
+           animation-name: deleteAnimation;
+           animation-duration: 0.5s;
+           animation-timing-function: ease;
+           animation-iteration-count: 1;
+           animation-fill-mode: forwards;
+        }
+    }
+    .prices{
+        margin-bottom: 50px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+        span{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        h3{
+            color: #4E4D93;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        h2{
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px;
+           color: #4E4D93;
+           text-align: end; 
+        }
+        button{
+            width: 172px;
+            padding: 16px 32px;
+            color: white;
+            background-color: #2A254B;
+            border: none;
+            @media screen and (max-width:475px) {
+                width: 100%;
+            }
+        }
+    }
+    h4{
+        position: absolute;
+        font-size: 24px;
+        opacity: 0.5;
+        top: 106px;
+        right: 50%;
+        transform: translateX(50%);
+        @media screen and (max-width:650px) {
+            top: 50px;
+            font-size: 20px;
+        }
+        @media screen and (max-width:475px) {
+            width: 200px;
+            top: 86px;
+        }
+    }
+    @media screen and (max-width:475px) {
+        margin-top: 75px;
+    }
+}
+@keyframes deleteAnimation {
+    from{
+        height: 160px;
+    }
+    to{
+        height: 0px;
+    }
+}

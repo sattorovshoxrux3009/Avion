@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../src/assets/fonts/Satoshi-Medium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-family: Satoshi,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #2A254B;
+}
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}

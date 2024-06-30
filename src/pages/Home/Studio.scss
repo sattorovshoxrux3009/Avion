@@ -1,0 +1,79 @@
+.studio{
+    .container{
+        margin: 80px 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        div{
+            position: relative;
+            width: 47%;
+            height: 478px;
+            background-color: #2A254B;
+            padding: 64px;
+            h1{
+                color: #FFF;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                @media screen and (max-width:475px) {
+                    font-size: 20px;                   
+                }
+            }
+            p{
+                margin-top: 20px;
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                @media screen and (max-width:475px) {
+                    font-size: 16px;  
+                    opacity: 0.8;                 
+                }
+            }
+            button{
+                margin-top: 25px;
+                padding: 16px 32px;
+                background-color: rgba(249, 249, 249, 0.15);;
+                color: white;
+                border:  1px solid rgba(249, 249, 249, 0.15);
+                position: absolute;
+                bottom: 25px;
+                transition: 0.2s;
+                &:hover{
+                    border: 1px solid #5B5676;
+                }
+                &:active{
+                    color: white;
+                    background-color: red;
+                }
+                @media screen and (max-width:475px) {
+                   position: static; 
+                   width: 100%;  
+                   margin-top: 55px;              
+                }
+            }
+            @media screen and (max-width:768px) {
+                width: 100%;                   
+            }
+            @media screen and (max-width:475px) {
+                padding: 36px 32px; 
+                height: auto;                  
+            }
+        }
+        img{
+            width: 45%;
+            @media screen and (max-width:768px) {
+                width: 100%;                
+            }
+        }
+        @media screen and (max-width:768px) {
+            flex-direction: column; 
+            gap: 25px;                  
+        }
+        @media screen and (max-width:475px) {
+            margin: 30px 0;                  
+        }
+    }
+}

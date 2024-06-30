@@ -1,0 +1,114 @@
+.footer{
+    background-color: #2A254B;
+    padding-top: 50px;
+    ul{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            h3{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: white;
+            }
+            a{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: white;
+            } 
+            @media screen and (max-width:475px) {
+                width: 40%;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width:475px) {
+            width: 100%;
+            justify-content: space-between;
+            gap: 25px;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        position: relative;
+        margin-top: 30px;
+        h1{
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: white;
+        }
+        input{
+            padding: 17px 360px 17px 32px;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            &::placeholder{
+                color: white;
+            }
+            @media screen and (max-width:575px) {
+                padding: 17px 0 17px 32px;
+                width: auto;
+            }
+        }
+        button{
+            position: absolute;
+            padding: 16px 32px;
+            font-size: 16px;
+            border: white;
+            top: 34.5px;
+            right: 0;
+        }
+    }
+    hr{
+        background: #4E4D93;
+        width: 100%;
+        height: 1px;
+        border: none;
+        margin-top: 30px;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        p{
+            padding: 15px 0;
+            color: white;
+            font-size: 14px;
+            @media screen and (max-width:475px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .links{
+            padding: 15px 0;
+            display: flex;
+            gap: 10px;
+            @media screen and (max-width:475px) {
+                display: none;
+            }
+        }
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:1000px) {
+            flex-direction: column;
+        }
+    }
+}
