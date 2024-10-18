@@ -8,30 +8,30 @@ export default function Differents() {
   const cards=[
     {
       img: differentImg1,
-      title: "Next day as standard",
-      text: "Order before 3pm and get your order the next day as standard"
+      title: "1 kunda yetkazib berish",
+      text: "Soat 15:00 dan oldin buyurtma bering va buyurtmani ertasi kuni qo'lingizga oling"
     },
     {
       img: differentImg2,
-      title: "Made by true artisans",
-      text: "Handmade crafted goods made with real passion and craftmanship"
+      title: "Mashhur brendlar",
+      text: "Dunyo bo'yicha taniqli brendlarning mahsulotlari bizning do'konimizda mavjud"
     },
     {
       img: differentImg3,
-      title: "Unbeatable prices",
-      text: "For our materials and quality you won’t find better prices anywhere"
+      title: "Arzon narx",
+      text: "Bunday sifat uchun bundanda yaxshiroq narxni topa olmaysiz"
     },
     {
       img: differentImg4,
-      title: "Recycled packaging",
-      text: "We use 100% recycled to ensure our footprint is more manageable"
+      title: "Mustahkam qadoqlash",
+      text: "Mahsulotga shikast yetmasligi uchun mustahkam qadoqlash vositalaridan foydalanamiz"
     },
   ]
 
   return (
     <div className="differents">
         <div className="container">
-            <h1>What makes our brand different</h1>
+            <h1>Bizning do'konimiz nimasi bilan farq qiladi?</h1>
             <ul>
               {cards.map((card,index)=>(
                 <li key={index}>

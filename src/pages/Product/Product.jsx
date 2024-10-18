@@ -32,7 +32,7 @@ function Product({count,setCount}) {
       <div className="product-top">
         <div className="container">
           <div className="product-title">
-              <h1>All products</h1>
+              <h1>Barcha mahsulotlar</h1>
           </div>  
         </div>
       </div>
@@ -44,30 +44,30 @@ function Product({count,setCount}) {
                 <img className="product-img" src={Products[selectedId].img} alt="" />
                 <span>
                   <h2>{Products[selectedId].name}</h2>
-                  <h4>£{Products[selectedId].price}</h4>
+                  <h4>{Products[selectedId].price.toLocaleString("ru-RU")} so'm</h4>
                   <hr />
-                  <p className="product-description">Product description</p>
-                  <p>A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
-                  <p>Dimensions</p>
+                  <p className="product-description">Mahsulot tavsifi</p>
+                  <p><strong>{Products[selectedId].description}</strong></p>
+                  <p>O'lchamlari</p>
                   <ul className="product-sizes">
                     <li>
-                      <p>Height</p>
-                      <p>{Products[selectedId].height}cm</p>
+                      <p>Bo'yi</p>
+                      <p>{Products[selectedId].height} sm</p>
                     </li>
                     <hr />
                     <li>
-                      <p>Width</p>
-                      <p>{Products[selectedId].width}cm</p>
+                      <p>Eni</p>
+                      <p>{Products[selectedId].width} sm</p>
                     </li>
                     <hr />
                     <li>
-                      <p>Depth</p>
-                      <p>{Products[selectedId].depth}cm</p>
+                      <p>Balandligi</p>
+                      <p>{Products[selectedId].depth} sm</p>
                     </li>
                   </ul>
-                  <p>Pieces left</p>
-                  <p className="product-left">{Products[selectedId].left}</p>
-                  {Products[selectedId].quantity==0 && <button className="add-btn" onClick={()=>{plusNumber()}}>Add to cart</button>}
+                  <p>Mavjud: </p>
+                  <p className="product-left">{Products[selectedId].left} ta</p>
+                  {Products[selectedId].quantity==0 && <button className="add-btn" onClick={()=>{plusNumber()}}>Savatga qo'shish</button>}
                   {Products[selectedId].quantity!=0 && 
                     <div className="buttons">
                       <button onClick={()=>{subsNumber()}}>-</button>
@@ -85,7 +85,7 @@ function Product({count,setCount}) {
               <li onClick={()=>{selectProduct(item.id)}} key={item.id}>
                 <img src={item.img} alt="" />
                 <h3>{item.name}</h3>
-                <p>£{item.price}</p>
+                <p>{item.price.toLocaleString("ru-RU")} so'm</p>
               </li>
             ))}
           </ul>

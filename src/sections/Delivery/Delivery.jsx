@@ -8,7 +8,7 @@ function Delivery({setShowDelivery}) {
     <div className="delivery">
         <div className="container">
             <img src={delivery} alt="" />
-            <p>Free delivery on all orders over £50 with code easter checkout</p>
+            <p>200 000 so'm va undan yuqori buyurtmalar uchun yetkazib berish bepul</p>
             <img className="x-icon" onClick={()=>{setShowDelivery(false)}} src={xicon} alt="" />
         </div>        
     </div>

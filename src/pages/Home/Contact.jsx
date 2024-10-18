@@ -5,10 +5,10 @@ function Contact() {
   return (
     <div className="contact">
         <div className="container">
-            <h1>Join the club and get the benefits</h1>
-            <p>Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
+            <h1>Jamoamizga qo'shiling va imtiyozlarga ega bo'ling</h1>
+            <p>Hamkorlik qilish uchun pastda o'z email manzilingizni qoldiring. Mutaxasislarimiz siz bilan bog'lanishadi!</p>
             <div>
-                {["Exclusive offers","Free events","Large discounts"].map((text,index)=>(
+                {["Eksklyuziv takliflar","Bepul seminarlar","Katta chegirmalar"].map((text,index)=>(
                     <span key={index}>
                         <img src={check} alt="" />
                         <h4>{text}</h4>
@@ -16,8 +16,8 @@ function Contact() {
                 ))}
             </div>
             <form>
-                <input type="email" required placeholder="your@email.com" />
-                <button type="submit">Sign up</button>
+                <input type="email" required placeholder="sizning@email.com" />
+                <button type="submit">Qo'shilish</button>
             </form>
         </div>
     </div>

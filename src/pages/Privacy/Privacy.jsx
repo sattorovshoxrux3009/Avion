@@ -4,37 +4,37 @@ function Privacy() {
   return (
     <div className="privacy">
       <div className="container">
-        <h1>Privacy Policy</h1>
+        <h1>Maxfiylik siyosati</h1>
         <hr />
-        <p>The Internet is an amazing tool. It has the power to change the way we live, and we're starting to see that
-        potential today. With only a few mouse-clicks, you can follow the news, look up facts, buy goods and
-        services, and communicate with others from around the world. It's important to Avion to help our customers retain their privacy when they take advantage of all the Internet has to offer.</p>
-        <p>We believe your business is no one else's. Your privacy is important to you and to us. So we'll protect the
-        information you share with us. To protect your privacy, Avion follows different
-        principles in accordance with worldwide practices for customer privacy and data protection.</p>
-        <p>• We won't sell or give away your name, mail address, phone number, email address or any other
-        information to anyone.</p>
-        <p>• We'll use state-of-the-art security measures to protect your information from unauthorized users.</p>
-        <h2>Notice</h2>
-        <p>We will ask you when we need information that personally identifies you selling or allows
-        us to contact you. Generally, this information is requested when you create a Registration ID on the site
-        or when you download free software, enter a contest, order email newsletters or join a limited-access
-        premium site. We use your Personal Information for four primary purposes:</p>
-        <p>• To make the site easier for you to use by not having to enter information more than once.</p>
-        <p>• To help you quickly find software, services or information.</p>
-        <p>• To help us create content most relevant to you.</p>
-        <p>• To alert you to product upgrades, special offers, updated information and other new services from Avion.</p>
-        <h2>Consent</h2>
-        <p>If you choose not to register or provide personal information, you can still use most of Avion. But you will not be able to access areas that require registration.</p>
-        <p>If you decide to register, you will be able to select the kinds of information you want to receive from us by
-        subscribing to various services, like our electronic newsletters. If you do not want us to communicate with
-        you about other offers regarding Avion products, programs, events, or services by
-        email, postal mail, or telephone, you may select the option stating that you do not wish to receive
-        marketing messages from Avion.</p>
-        <p>Avion occasionally allows other companies to offer our registered customers
-        information about their products and services, using postal mail only. If you do not want to receive these
-        offers, you may select the option stating that you do not wish to receive marketing materials from third
-        parties.</p>
+        <p>Internet ajoyib vositadir. U bizning hayot tarzimizni o'zgartirishga qodir va biz buni ko'ra boshladik
+        bugungi kunda salohiyat. Sichqonchani bir necha marta bosish orqali siz yangiliklarni kuzatib borishingiz, faktlarni qidirishingiz, tovarlar sotib olishingiz va
+        xizmatlar va butun dunyo bo'ylab boshqalar bilan muloqot qilish. Uzum uchun mijozlarimiz Internetning barcha imkoniyatlaridan foydalanganlarida o‘z maxfiyligini saqlab qolishlariga yordam berish juda muhim.</p>
+        <p>Sizning biznesingiz boshqa hech kim emasligiga ishonamiz. Sizning maxfiyligingiz siz va biz uchun muhim. Shunday qilib, biz himoya qilamiz
+        biz bilan baham ko'rgan ma'lumotlar. Maxfiyligingizni himoya qilish uchun Uzum turli xil
+        mijozlarning maxfiyligi va ma'lumotlarini himoya qilish bo'yicha jahon amaliyotiga muvofiq tamoyillar.</p>
+        <p>• Biz sizning ismingiz, pochta manzilingiz, telefon raqamingiz, elektron pochta manzilingizni yoki boshqa ma'lumotlarni sotmaymiz yoki sizga bermaymiz
+        har kimga ma'lumot.</p>
+        <p>• Maʼlumotlaringizni ruxsatsiz foydalanuvchilardan himoya qilish uchun biz eng zamonaviy xavfsizlik choralarini qoʻllaymiz.</p>
+        <h2>Eslatma</h2>
+        <p>Sizni sotishga ruxsat beruvchi yoki shaxsan identifikatsiya qiluvchi maʼlumotlar kerak boʻlganda sizdan soʻraymiz
+        biz siz bilan bog'lanish uchun. Odatda, bu ma'lumot saytda Ro'yxatdan o'tish ID yaratganingizda so'raladi
+        yoki bepul dasturiy ta'minotni yuklab olganingizda, tanlovda qatnashing, elektron pochta xabarnomalariga buyurtma bering yoki cheklangan kirish huquqiga qo'shiling
+        premium sayt. Shaxsiy ma'lumotlaringizdan to'rtta asosiy maqsadda foydalanamiz:</p>
+        <p>• Ma'lumotni bir necha marta kiritmaslik uchun saytdan foydalanishni osonlashtirish uchun.</p>
+        <p>• Dasturiy ta'minot, xizmatlar yoki ma'lumotlarni tezda topishga yordam berish.</p>
+        <p>• Sizga eng mos kontent yaratishda yordam berish.</p>
+        <p>• Uzum’dan mahsulot yangilanishi, maxsus takliflar, yangilangan ma’lumotlar va boshqa yangi xizmatlar haqida sizni ogohlantirish uchun.</p>
+        <h2>Rozilik</h2>
+        <p>Agar siz roʻyxatdan oʻtmaslik yoki shaxsiy maʼlumotlarni taqdim qilmaslikni tanlasangiz, Uzum’dan koʻp foydalanishingiz mumkin. Ammo siz ro'yxatdan o'tishni talab qiladigan hududlarga kira olmaysiz.</p>
+        <p>Agar siz ro'yxatdan o'tishga qaror qilsangiz, bizdan olishni istagan ma'lumotlar turlarini tanlashingiz mumkin bo'ladi
+        bizning elektron axborot byulletenlarimiz kabi turli xizmatlarga obuna bo'lish. Agar biz bilan aloqa qilishimizni xohlamasangiz
+        Uzum mahsulotlari, dasturlari, tadbirlari yoki xizmatlariga oid boshqa takliflar haqida
+        elektron pochta, pochta yoki telefon, siz olishni xohlamasligingizni bildiruvchi variantni tanlashingiz mumkin
+        Uzumdan marketing xabarlari.</p>
+        <p>Uzum vaqti-vaqti bilan boshqa kompaniyalarga ro'yxatdan o'tgan mijozlarimizni taklif qilish imkonini beradi
+        ularning mahsulotlari va xizmatlari haqida ma'lumot, faqat pochta orqali. Agar siz ularni olishni xohlamasangiz
+        takliflar bo'lsa, siz uchinchidan marketing materiallarini olishni istamasligingizni bildiruvchi variantni tanlashingiz mumkin
+        partiyalar.</p>
       </div>
     </div>
   )

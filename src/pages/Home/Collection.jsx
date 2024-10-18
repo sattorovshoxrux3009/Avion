@@ -1,32 +1,27 @@
 import "./Collection.scss"
 import { NavLink } from "react-router-dom"
 
-import  collectionImg1 from "../../assets/img/collection1.png"
-import  collectionImg2 from "../../assets/img/collection2.png"
-import  collectionImg3 from "../../assets/img/collection3.png"
-import  collectionImg4 from "../../assets/img/collection4.png"
-
 function Collection() {
     const collection=[
         {
-            img: collectionImg1,
-            title: "The Dandy chair",
-            price: 250
+            img: 'https://images.uzum.uz/crrdrik0u44g6jopetsg/original.jpg',
+            title: "O'yin kompyuteri",
+            price: 4690000
         },
         {
-            img: collectionImg2,
-            title: "Rustic Vase Set",
-            price: 155
+            img: 'https://images.uzum.uz/cr85a6msbq7g1s9bdimg/original.jpg',
+            title: "O'yin sichqonchasi",
+            price: 159000
         },
         {
-            img: collectionImg3,
-            title: "The Silky Vase",
-            price: 125
+            img: 'https://images.uzum.uz/crga01e0t1lqb8ar5bu0/original.jpg',
+            title: "Oyin quloqchinlari",
+            price: 175000
         },
         {
-            img: collectionImg4,
-            title: "The Lucy Lamp",
-            price: 399
+            img: 'https://images.uzum.uz/cqqsj2nfrr8a72r7pal0/original.jpg',
+            title: "Monitor Xtech",
+            price: 1099000
         }
     ]
 
@@ -38,11 +33,11 @@ function Collection() {
                     <li key={index}>
                         <img src={item.img} alt="" />
                         <h5>{item.title}</h5>
-                        <h6>£{item.price}</h6>
+                        <h6>{item.price.toLocaleString("ru-RU")} so'm</h6>
                     </li>
                 ))}
             </ul>
-            <NavLink to='/product'><button>View collection</button></NavLink>
+            <NavLink to='/product'><button>Mahsulotlarni ko'rish</button></NavLink>
         </div>
     </div>
   )

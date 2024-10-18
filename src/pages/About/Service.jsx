@@ -8,13 +8,13 @@ function Service() {
   return (
     <div className="service">
         <div className="container">
-          <h1>A brand built on the love of craftmanship, quality and outstanding customer service</h1>
+          <h1>Sifat va ajoyib mijozlarga xizmat ko'rsatish servisiga asoslangan do'kon</h1>
           <ul>
             <li>
-              <h2>From a studio in London to a global brand with over 400 outlets</h2>
-              <p>When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
-              <p>Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
-              <NavLink to='/product'><button>Get in touch</button></NavLink>
+              <h2>Toshkentda 50 dan ortiq savdo nuqtalari va do'konlarga egamiz</h2>
+              <p>Biz Uzumni ishga tushurganimizda g'oya oddiy edi. Yuqori sifatli va hamyonbop mahsulotlarni ommaviy bozor uchun olib chiqdik</p>
+              <p>Chet elda ishlab chiqarilgan mahsulotlarimiz sizni uyingizni qulayliklarga boyitishiga ishonamiz. Xalqimizning qulayligi uchun har bir viloyatda va shaharda o'nlab do'konlarimizni joylashtirdik. Sizdan ishonch bizdan sifat</p>
+              <NavLink to='/product'><button>Mahsulotlar</button></NavLink>
             </li>
             <li>
               <img src={serviceImg1} alt="" />
@@ -23,10 +23,10 @@ function Service() {
               <img src={serviceImg2} alt="" />
             </li>
             <li>
-              <h2>Our service isn’t just personal, it’s actually hyper personally exquisite</h2>
-              <p>When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
-              <p>Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
-              <NavLink to='/product'><button>Get in touch</button></NavLink>
+              <h2>Bizning xizmatlarimiz juda maxfiyligi yuqori.</h2>
+              <p>Har bir foydalanuvchi mijozimizning malumotlari maxfiy tarzda saqlanadi. Uning karta malumotlari, to'lovlar bilan bog'liq muammo yuzaga kelganda kompaniyamiz butun xarajatlarni qoplab beradi.</p>
+              <p>Bizni tanlaganingizdan xursandmiz. Sizdan ishonch bizdan sifat.</p>
+              <NavLink to='/product'><button>Mahsulotlar</button></NavLink>
             </li>
           </ul>
         </div>

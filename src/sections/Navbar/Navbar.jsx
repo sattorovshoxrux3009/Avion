@@ -22,7 +22,7 @@ function Navbar({count,setCount}) {
   const [showNavbar,setShowNavbar]=useState(false)
 
   useEffect(()=>{
-    if(page=='About' || page== 'Product'){
+    if(page=="Biz haqimizda" || page== 'Mahsulotlar'){
       setShowDelivery(true)
     }
     else{
@@ -55,19 +55,19 @@ function Navbar({count,setCount}) {
 
   const links=[
     {
-      text:"Home",
+      text:"Asosiy",
       to:"/"
     },
     {
-      text:"About",
+      text:"Biz haqimizda",
       to:"/about"
     },
     {
-      text:"Privacy",
+      text:"Maxfiylik siyosati",
       to:"/privacy"
     },
     {
-      text:"Product",
+      text:"Mahsulotlar",
       to:"/product"
     },
   ]
@@ -82,7 +82,7 @@ function Navbar({count,setCount}) {
             {showSearch==false && <img onClick={()=>{setShowSearch(true)}} src={search} alt=""/>}
             {showSearch==true && 
             <Form onSubmit={(e)=>{searchProduct(e)}}>
-              <input placeholder="Search..." onChange={(e)=>{setInputValue(e.target.value)}} type="text" />
+              <input placeholder="Qidiruv..." onChange={(e)=>{setInputValue(e.target.value)}} type="text" />
               <button type="submit">
                 <img src={searchWhite} alt="" />
               </button>
@@ -90,8 +90,11 @@ function Navbar({count,setCount}) {
             }
             <img className="hamburger" onClick={()=>{setShowNavbar(true)}} src={hamburger} alt="" />
           </span>
-          <h1>Avion</h1>
-          <NavLink to='/basket' onClick={()=>{setPage('Basket');setShowSearchList(false)}}><img src={shoppingCart} alt="" /><p>{count}</p></NavLink>  
+          <h1>Uzum</h1>
+          <NavLink className="basketIcon1" to='/basket' onClick={()=>{setPage('Basket');setShowSearchList(false)}}>
+            <img src={shoppingCart} alt="" />
+            <p>{count}</p>
+          </NavLink>  
         </div>
         <hr/>
         <nav>
@@ -104,15 +107,15 @@ function Navbar({count,setCount}) {
     {showSearchList && 
      <div className="search-list">
       <div className="container">
-        <h1>Search of '{inputValue}'</h1>
+        <h1>'{inputValue}' bo'yicha qidiruv natijalari</h1>
         <img className="x-icon" onClick={()=>{closeSearch()}} src={xicon} alt="" />
         <ul>
           {Products.filter(item=>item.name.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())).map((item)=>(
             <li key={item.id}>
               <img src={item.img} alt="" />
               <h4>{item.name}</h4>
-              <p>£{item.price}</p>
-              {Products[item.id].quantity==0 && <button className="add-btn" onClick={()=>{plusNumber(item.id)}}>Add to cart</button>}
+              <p>{item.price.toLocaleString("ru-RU")} so'm</p>
+              {Products[item.id].quantity==0 && <button className="add-btn" onClick={()=>{plusNumber(item.id)}}>Savatga qo'shish</button>}
               {Products[item.id].quantity!=0 && 
                 <div className="buttons">
                   <button onClick={()=>{subsNumber(item.id)}}>-</button>
@@ -129,7 +132,7 @@ function Navbar({count,setCount}) {
     {showNavbar && 
       <div className={showNavbar ? "active navbar-mobile" :"navbar-mobile"}>
         <div className="wrapper">
-          <h1>Avion</h1>
+          <h1>Uzum</h1>
           <img src={xicon} onClick={()=>{setShowNavbar(false)}} alt="" />
           {links.map((link,index)=>(
             <NavLink  key={index} onClick={(e)=>{setPage(e.target.innerHTML);setShowSearchList(false);setShowNavbar(false)}} to={link.to}>{link.text}</NavLink>

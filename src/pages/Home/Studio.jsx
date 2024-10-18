@@ -8,9 +8,9 @@ function Studio() {
     <div className="studio">
         <div className="container">
             <div>
-                <h1>It started with a small idea</h1>
-                <p>A global brand with local beginnings, our story begain in a small studio in South London in early 2014</p>
-                <NavLink to='/product'><button>View collection</button></NavLink>
+                <h1>Do'konimiz kichik fikr orqasidan yaratildi</h1>
+                <p>Hozirda rivojlangan do'konimiz 2022-yilda Toshkentdagi kichik bir studiyada boshlangan</p>
+                <NavLink to='/product'><button>Mahsulotlarni ko'rish</button></NavLink>
             </div>
             <img src={studio} alt="" />
         </div>

@@ -7,10 +7,9 @@ function Main() {
     <div className='main'>
         <div className="container">
             <div>
-                <h1>Luxury homeware for people who love timeless design quality</h1>
-                <p>With our new collection, view over 400 bespoke pieces from homeware through to furniture today</p>
-                <NavLink to='/product'><button>View collection</button></NavLink>
-                
+                <h1>Doimiy sifatni yaxshi ko'radigan odamlar uchun premium sinfga tegishli mahsulotlar</h1>
+                <p>Bizning yangi kolleksiyamiz bilan bugungi kunda uy jihozlaridan tortib maishiy texnikagacha bo'lgan 50 dan ortiq tovarlarni korishingiz mumkin</p>
+                <NavLink to='/product'><button>Mahsulotlarni ko'rish</button></NavLink>   
             </div>
         </div>
         <img src={image} alt="" />
