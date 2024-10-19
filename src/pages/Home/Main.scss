@@ -48,12 +48,14 @@
                 position: absolute;
                 top: 80%;
                 transition: 0.2s;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
                 &:hover{
                     border: 1px solid #5B5676;
                 }
                 &:active{
                     color: white;
-                    background-color: red;
+                    background-color:  #2A254B;
+                    transform: translateY(2px) translateX(2px);
                 }
                 @media screen and (max-width:475px) {
                     width: 100%;

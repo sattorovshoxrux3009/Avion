@@ -12,7 +12,7 @@ function Service() {
           <ul>
             <li>
               <h2>Toshkentda 50 dan ortiq savdo nuqtalari va do'konlarga egamiz</h2>
-              <p>Biz Uzumni ishga tushurganimizda g'oya oddiy edi. Yuqori sifatli va hamyonbop mahsulotlarni ommaviy bozor uchun olib chiqdik</p>
+              <p>Biz SavdoPalni ishga tushurganimizda g'oya oddiy edi. Yuqori sifatli va hamyonbop mahsulotlarni ommaviy bozor uchun olib chiqdik</p>
               <p>Chet elda ishlab chiqarilgan mahsulotlarimiz sizni uyingizni qulayliklarga boyitishiga ishonamiz. Xalqimizning qulayligi uchun har bir viloyatda va shaharda o'nlab do'konlarimizni joylashtirdik. Sizdan ishonch bizdan sifat</p>
               <NavLink to='/product'><button>Mahsulotlar</button></NavLink>
             </li>

@@ -165,7 +165,15 @@
             padding: 16px 32px;
             color: white;
             background-color: #2A254B;
-            border: none;
+            border: 1px solid #2A254B;
+            transition: 0.2s;
+            &:hover{
+                color: #2A254B;
+                background-color: white;
+            }
+            &:active{
+                transform: translateX(2px) translateY(2px);
+             }
             @media screen and (max-width:475px) {
                 width: 100%;
             }

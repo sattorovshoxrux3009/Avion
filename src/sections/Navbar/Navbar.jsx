@@ -70,6 +70,10 @@ function Navbar({count,setCount}) {
       text:"Mahsulotlar",
       to:"/product"
     },
+    {
+      text:"Savat",
+      to:"/basket"
+    },
   ]
 
   return (
@@ -90,7 +94,7 @@ function Navbar({count,setCount}) {
             }
             <img className="hamburger" onClick={()=>{setShowNavbar(true)}} src={hamburger} alt="" />
           </span>
-          <h1>Uzum</h1>
+          <h1>SavdoPal</h1>
           <NavLink className="basketIcon1" to='/basket' onClick={()=>{setPage('Basket');setShowSearchList(false)}}>
             <img src={shoppingCart} alt="" />
             <p>{count}</p>
@@ -132,12 +136,12 @@ function Navbar({count,setCount}) {
     {showNavbar && 
       <div className={showNavbar ? "active navbar-mobile" :"navbar-mobile"}>
         <div className="wrapper">
-          <h1>Uzum</h1>
+          <h1>SavdoPal</h1>
           <img src={xicon} onClick={()=>{setShowNavbar(false)}} alt="" />
           {links.map((link,index)=>(
             <NavLink  key={index} onClick={(e)=>{setPage(e.target.innerHTML);setShowSearchList(false);setShowNavbar(false)}} to={link.to}>{link.text}</NavLink>
           ))}
-          <NavLink onClick={(e)=>{setPage(e.target.innerHTML);setShowSearchList(false);setShowNavbar(false)}} to='/basket' >Basket</NavLink>
+          {/* <NavLink onClick={(e)=>{setPage(e.target.innerHTML);setShowSearchList(false);setShowNavbar(false)}} to='/basket' >Basket</NavLink> */}
         </div>
       </div>
     }

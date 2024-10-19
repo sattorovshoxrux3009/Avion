@@ -4,10 +4,36 @@ import facebook from "../../assets/img/facebook.svg"
 import instagram from "../../assets/img/instagram.svg"
 import telegram from "../../assets/img/telegram.svg"
 import { NavLink } from 'react-router-dom'
+import { useState } from "react"
 
 function Footer() {
+  const [emailValue,setEmailValue]=useState("")
   function scrollTop(){
     window.scrollY(0)
+  }
+  let bot={
+    TOKEN: "8135441285:AAEppK5L4XCO-wJ9MG7P7624YrnXNeZFLIQ",
+    chatID: "5055000310",
+    message: `SavdoPal jamoangizga qo'shilish so'rovi yuborildi
+    %0AXabar yuboruvchi email manzili: ${emailValue}`
+  };
+  function sendMessage(e){
+    e.preventDefault();
+    fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${bot.message} `,
+    {
+      method: "GET",
+    })
+    .then(
+        (success)=>{
+            if (success.status == 200) {
+                // handleSucces()
+            } 
+        },
+        (error)=>{
+            console.log(error)
+        }
+    )
+    setEmailValue("");
   }
   return (
     <div className="footer">
@@ -34,15 +60,15 @@ function Footer() {
                 <NavLink onClick={()=>{scrollTop()}} to='/about'>Maxfiylik siyosati</NavLink> 
               </li>
             </ul>
-          <form>
+          <form onSubmit={(e)=>{sendMessage(e)}}>
             <h1>Jamoamizga qo'shiling</h1>
-            <input type="email" placeholder="sizning@email.com" required />
-            <button>Qo'shilish</button>
+            <input value={emailValue} onChange={(e) => setEmailValue(e.target.value)} type="email" placeholder="sizning@email.com" required />
+            <button type="submit">Qo'shilish</button>
           </form>
         </span>
         <hr/>
         <span className="footer-links">
-            <p>Mualliflik huquqi 2024 Uzum LTD</p>
+            <p>Mualliflik huquqi 2024 SavdoPal LTD</p>
             <div className="links">
               <a target="_blank" href="https://www.linkedin.com/in/shohruh-sattorov-4a821b2b3"><img src={linkedin}/></a>              
               <a target="_blank" href="https://www.facebook.com/sattorovshoxrux3009"><img src={facebook}/></a>              

@@ -13,14 +13,15 @@ import Privacy from "./pages/Privacy/Privacy.jsx"
 import Product from "./pages/Product/Product.jsx"
 import PageError from './pages/PageError/PageError.jsx'
 import Basket from './pages/Basket/Basket.jsx'
+import Pay from "./pages/Pay/Pay.jsx"
 
 // Layouts
 import RootLayout from "./layout/RootLayout.jsx"
-
 import { useState } from 'react'
 
 function App() {
   const [count,setCount]=useState(0)
+  const [subtotal,setSubtotal]=useState(0)
 
   const routes=createBrowserRouter(
     createRoutesFromElements(
@@ -29,7 +30,8 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/product' element={<Product count={count} setCount={setCount}/>}/>
-        <Route path='/basket' element={<Basket count={count} setCount={setCount}/>}/>
+        <Route path='/basket' element={<Basket count={count} setCount={setCount} subtotal={subtotal} setSubtotal={setSubtotal}/>}/>
+        <Route path='/basket/pay' element={<Pay subtotal={subtotal} setSubtotal={setSubtotal} setCount={setCount}/>}/>
         <Route path='*' element={<PageError/> }/>
       </Route>
     )

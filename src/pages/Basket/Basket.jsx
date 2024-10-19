@@ -1,15 +1,19 @@
 import "./Basket.scss"
 import Products from "../../assets/data/Products.jsx"
 import deletIcon from "../../assets/img/delete.svg"
+import { useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
-function Basket({count,setCount}) {
-    let subtotal=0;
+function Basket({count,setCount,subtotal,setSubtotal}) {
+    
     const totalPrice= async ()=>{
         Products.filter(item=>item.quantity>0).map((product)=>{
-            subtotal=product.price*product.quantity+subtotal;
+            setSubtotal(product.price*product.quantity+subtotal);
         })
     }
-   totalPrice();
+   useEffect(()=>{
+    totalPrice();
+   },[]) 
 
    function deleteProduct(id,e){
         e.target.parentElement.classList.add('deleteAnimate');
@@ -61,7 +65,7 @@ function Basket({count,setCount}) {
                     <h2>{subtotal.toLocaleString("ru-RU")} so'm</h2>
                 </span>
                 <p>Soliqlar va jo'natmalar kassada hisoblanadi</p>
-                {count!=0 && <button>To'lov qilish</button>}
+                {count!=0 && <NavLink to='/basket/pay'><button onClick={()=>{}}>To'lov qilish</button></NavLink>}
             </div>
         </div>
     </div>
